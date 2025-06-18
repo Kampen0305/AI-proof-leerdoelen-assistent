@@ -33,8 +33,8 @@ export const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => 
     });
   };
 
-  const commonInputClass = "w-full p-3 bg-slate-700 border border-slate-600 rounded-md focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none placeholder-slate-400 text-slate-100 transition-colors";
-  const commonLabelClass = "block mb-2 text-sm font-medium text-sky-200";
+  const commonInputClass = "w-full p-3 bg-white border border-brand-green/40 rounded-md focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none placeholder-gray-400 text-brand-black transition-colors";
+  const commonLabelClass = "block mb-2 text-sm font-medium text-brand-black";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -130,7 +130,7 @@ export const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => 
       <button
         type="submit"
         disabled={isLoading || !originalObjective.trim()}
-        className="w-full flex items-center justify-center px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-opacity-75 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full flex items-center justify-center px-6 py-3 bg-brand-green hover:bg-brand-orange text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-opacity-75 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isLoading ? (
           <>

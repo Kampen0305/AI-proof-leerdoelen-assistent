@@ -43,11 +43,11 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-slate-100">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-brand-green/10 via-white to-brand-green/20 text-brand-black">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto bg-slate-800 shadow-2xl rounded-lg p-6 md:p-10">
-          <p className="mb-6 text-lg text-slate-300">
+        <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-lg p-6 md:p-10">
+          <p className="mb-6 text-lg text-brand-black/80">
             Deze tool helpt u traditionele leerdoelen om te vormen naar toekomstbestendige, 'AI-proof' versies. 
             Voer de details van uw huidige leerdoel in en de AI genereert suggesties die studenten aanmoedigen 
             AI-tools op een verantwoorde en effectieve manier te gebruiken.

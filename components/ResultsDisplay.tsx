@@ -37,15 +37,15 @@ export const ResultsDisplay: React.FC<ResultsDisplayProps> = ({ objectives }) =>
 
   return (
     <div className="mt-10">
-      <h2 className="text-2xl font-semibold mb-6 text-sky-200">Gegenereerde AI-Proof Leerdoelen:</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-brand-black">Gegenereerde AI-Proof Leerdoelen:</h2>
       <div className="space-y-4">
         {objectives.map((objective) => (
-          <div key={objective.id} className="p-5 bg-slate-700 rounded-lg shadow-lg relative group">
-            <p className="text-slate-200 leading-relaxed mr-12">{objective.text}</p>
+          <div key={objective.id} className="p-5 bg-white border border-brand-green/20 rounded-lg shadow-lg relative group">
+            <p className="text-brand-black leading-relaxed mr-12">{objective.text}</p>
             <button
               onClick={() => handleCopy(objective.text, objective.id)}
               title={copiedId === objective.id ? "Gekopieerd!" : "Kopieer naar klembord"}
-              className="absolute top-3 right-3 p-2 bg-sky-600 hover:bg-sky-500 text-white rounded-full transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-sky-400"
+              className="absolute top-3 right-3 p-2 bg-brand-green hover:bg-brand-orange text-white rounded-full transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-brand-orange"
             >
               {copiedId === objective.id ? <CheckIcon /> : <CopyIcon />}
             </button>
