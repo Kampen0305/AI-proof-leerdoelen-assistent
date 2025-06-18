@@ -5,6 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI-Proof Leerdoelen Assistent</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-green': '#64C37D',
+              'brand-orange': '#F7941D',
+              'brand-black': '#1D1D1B'
+            }
+          }
+        }
+      }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
   <script type="importmap">
@@ -17,9 +30,8 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-slate-100">
+  <body class="bg-gray-50 text-brand-black">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
