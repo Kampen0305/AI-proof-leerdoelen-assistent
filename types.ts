@@ -36,3 +36,14 @@ export interface GeminiServiceResponse {
   data?: string[];
   error?: string;
 }
+
+export interface ModuleWithOutcomes {
+  moduleTitle: string;
+  learningOutcomes: string[];
+}
+
+export interface OpenAIServiceResponse {
+  success: boolean;
+  data?: ModuleWithOutcomes[];
+  error?: string;
+}
