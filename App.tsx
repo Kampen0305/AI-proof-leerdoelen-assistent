@@ -5,6 +5,7 @@ import { InputForm } from './components/InputForm';
 import { ResultsDisplay } from './components/ResultsDisplay';
 import { Spinner } from './components/Spinner';
 import { Footer } from './components/Footer';
+import { PdfUploader } from './src/components/PdfUploader';
 import { generateAIProofObjectives } from './services/geminiService';
 import type { FormData, ProcessedLearningObjective } from './types';
 import { DUTCH_SYSTEM_INSTRUCTION, DUTCH_USER_PROMPT_TEMPLATE } from './constants';
@@ -72,6 +73,12 @@ const App: React.FC = () => {
             <ResultsDisplay objectives={aiProofObjectives} />
           )}
         </div>
+
+        <section className="max-w-4xl mx-auto mt-12">
+          <h2 className="text-2xl font-semibold mb-4 text-primary">Upload PDF</h2>
+          <PdfUploader />
+        </section>
+
       </main>
       <Footer />
     </div>
