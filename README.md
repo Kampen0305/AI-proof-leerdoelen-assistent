@@ -15,4 +15,5 @@ This contains everything you need to run your app locally.
 
 ## PDF → Modules met Leeruitkomsten
 
-Upload een PDF (bijv. een kwalificatiedossier) via het onderdeel **Upload PDF**. De tekst wordt uit het document gehaald en naar OpenAI gestuurd om modules met leeruitkomsten te genereren. De resultaten verschijnen in een overzichtelijke grid.
+Het uploaden van een PDF is optioneel. Via **Upload PDF** kunt u desgewenst een kwalificatiedossier aanleveren. De tekst wordt uit het document gehaald en naar OpenAI gestuurd om modules met leeruitkomsten te genereren. De resultaten verschijnen in een overzichtelijke grid.
+Wilt u alleen handmatig leerdoelen invoeren, dan kunt u de PDF-uploader overslaan.
