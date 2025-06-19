@@ -130,7 +130,7 @@ export const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => 
       <button
         type="submit"
         disabled={isLoading || !originalObjective.trim()}
-        className="w-full flex items-center justify-center px-6 py-3 bg-brand-green hover:bg-brand-orange text-white font-semibold rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-opacity-75 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full mt-6 flex items-center justify-center px-6 py-4 text-lg bg-brand-orange hover:bg-brand-green text-white font-semibold rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-brand-green focus:ring-opacity-75 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isLoading ? (
           <>
@@ -141,7 +141,7 @@ export const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => 
             Verwerken...
           </>
         ) : (
-          'Genereer AI-Proof Leerdoelen'
+          'Genereer leerdoelen'
         )}
       </button>
     </form>
