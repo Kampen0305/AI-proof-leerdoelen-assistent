@@ -14,6 +14,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [aiProofObjectives, setAiProofObjectives] = useState<ProcessedLearningObjective[]>([]);
+  const [showPdfUploader, setShowPdfUploader] = useState<boolean>(false);
 
   const handleSubmit = useCallback(async (formData: FormData) => {
     setIsLoading(true);
@@ -75,8 +76,15 @@ const App: React.FC = () => {
         </div>
 
         <section className="max-w-4xl mx-auto mt-12">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Upload PDF</h2>
-          <PdfUploader />
+          <h2 className="text-2xl font-semibold mb-4 text-primary">Upload PDF (optioneel)</h2>
+          <button
+            type="button"
+            onClick={() => setShowPdfUploader(!showPdfUploader)}
+            className="mb-4 px-4 py-2 bg-brand-green text-white rounded-md hover:bg-brand-orange focus:outline-none"
+          >
+            {showPdfUploader ? 'Sluit uploader' : 'Toon uploader'}
+          </button>
+          {showPdfUploader && <PdfUploader />}
         </section>
 
       </main>
